@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">My future profession</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body translate="no">
+  <div class="container">
+    <header>
+      <h1>My future profession</h1>
+      <p id="description">We choose a profession not only when we go to university.<br>
+        But also when we want to change our lives</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required="">
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email" required="">
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age(optional)</label>
+        <input id="number" type="number" name="age" class="form-control" min="16" max="66" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <p>What professional status do you have now?</p>
+        <select id="dropdown" name="role" class="form-control" required="">
+          <option disabled="" selected="" value="">Select current role</option>
+          <option name="student" value="student">Student</option>
+          <option name="job" value="job">Full Time Job</option>
+          <option name="learner" value="learner">Free Time Job</option>
+          <option name="preferNo" value="preferNo">In search of work</option>
+          <option name="other" value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you like to work in IT?</p>
+        <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Yes</label>
+        <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">No</label>
+        <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Does not
+          matter</label>
+      </div>
+      <div class="form-group">
+        <p>What is your favorite programming language? </p>
+        <select id="most-like" class="form-control" required="">
+          <option disabled="" selected="" value="">Select an option</option>
+          <option value="java">Java</option>
+          <option value="javascript">JavaScript</option>
+          <option value="php">PhP/option>
+          <option value="python">Python</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>What resources do you use the most to learn something new?<span>(Check all that apply)</span></p>
+        <label><input name="prefer" value="books" type="checkbox" class="input-checkbox">Books</label>
+        <label><input name="prefer" value="video" type="checkbox" class="input-checkbox">Video</label>
+        <label><input name="prefer" value="articles" type="checkbox" class="input-checkbox">Articles</label>
+        <label><input name="prefer" value="source" type="checkbox" class="input-checkbox">Source</label>
+        <label><input name="prefer" value="tutoring" type="checkbox" class="input-checkbox">Tutoring</label>
+        <label><input name="prefer" value="internet" type="checkbox" class="input-checkbox">Internet</label>
+      </div>
+      <div class="form-group">
+        <p>Do you have any comments?</p>
+        <textarea name="comment" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
